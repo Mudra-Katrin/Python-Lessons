@@ -6,4 +6,4 @@ def IsWensday():
 
 print(IsWensday())
 input("Press Enter to continue...")
-qwweertyyuii
+qwwee
