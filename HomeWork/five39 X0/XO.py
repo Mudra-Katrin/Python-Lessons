@@ -1,12 +1,14 @@
 
 import random
-maps=[1,2,3,4,5,6,7,8,9]
+maps=[1,2,3,
+      4,5,6,
+      7,8,9]
 victories = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
 
 def check_victories():
     for i in victories:
-        if maps[i[0]]==maps[i[1]]==maps[i[2]]:
-            return True
+        if maps[i[0]]==maps[i[1]]==maps[i[2]]:         
+            return True        
         else:
             return False
  
@@ -32,6 +34,7 @@ print(first_turn)
 game_over = False
 
 cur_turn = first_turn
+
 while not game_over:
     if cur_turn==first_turn:
         symbol = "X"
