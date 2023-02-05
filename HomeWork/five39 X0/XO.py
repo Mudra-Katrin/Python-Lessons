@@ -9,8 +9,9 @@ def check_victories():
     for i in victories:
         if maps[i[0]]==maps[i[1]]==maps[i[2]]:         
             return True        
-        else:
-            return False
+        
+    else:
+        return False
  
 def print_maps():
     print(maps[0],end="")
